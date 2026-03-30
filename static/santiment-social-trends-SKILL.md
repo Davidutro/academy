@@ -1,9 +1,3 @@
----
-name: santiment-social-trends
-description: >
-  Expert guidance for using Santiment's Social Trends feature to read crowd behaviour and identify trading signals. Use this skill whenever a user asks about Social Trends, social volume, trending words, sentiment analysis, crowd behaviour, or how to interpret social data on Santiment. Also trigger when users ask "what does this social spike mean", "how do I read social trends", "is this trending word a signal", "how do I use word combinations", or any question about interpreting social/sentiment data on the Santiment platform. This skill encodes power-user knowledge that is not obvious from the UI — always use it rather than giving generic advice about social data.
----
-
 # Santiment Social Trends — Power User Guide
 
 This skill encodes expert, non-obvious knowledge about using Santiment's Social Trends feature effectively. Apply it when helping users interpret social signals, spot crowd behaviour patterns, and cross-reference with price action.
@@ -19,15 +13,18 @@ Social Trends is a **contrarian tool**, not a momentum tool. The crowd is usuall
 ## Step 1: Open Social Trends — First Things to Check
 
 ### 1a. Trending Words List
+
 The first thing to scan is the **top trending words**. But don't just read the list — immediately check the **source breakdown** for each trending word.
 
 **Spam detection rule:**
+
 - ✅ **Genuine trend** = volume distributed roughly equally across sources (Twitter/X, Telegram, Reddit, Discord)
 - 🚨 **Spam / coordinated campaign** = volume dominated almost entirely by **Telegram**
 
 Single-source Telegram dominance is the clearest indicator of artificial pumping or coordinated shilling. Dismiss these signals entirely.
 
 ### 1b. The "Small Coin in Top 3" Rule — Strong Top Signal
+
 This is one of the highest-conviction signals on the platform:
 
 > **If a small/obscure coin appears in the top 3 trending words, treat it as a near-certain local top signal.**
@@ -40,10 +37,10 @@ When a small cap dominates social attention to that degree, retail euphoria has 
 
 Do not use short time windows for trend analysis. Recommended settings:
 
-| Goal | Time Range | Granularity |
-|------|-----------|-------------|
-| Day-to-day monitoring | 1 month | 1h |
-| Broader trend context | 3 months | 4h |
+| Goal                  | Time Range | Granularity |
+| --------------------- | ---------- | ----------- |
+| Day-to-day monitoring | 1 month    | 1h          |
+| Broader trend context | 3 months   | 4h          |
 
 Shorter windows (24h, 7d) lack the historical baseline needed to judge whether a spike is truly anomalous. Always zoom out first, then zoom in on the spike.
 
@@ -52,11 +49,13 @@ Shorter windows (24h, 7d) lack the historical baseline needed to judge whether a
 ## Step 3: Social Volume Analysis
 
 Social Volume = the raw count of mentions. Use it to:
+
 - Identify **when** a spike occurred
 - Compare spike magnitude against historical baseline
 - Detect divergences (volume spike but no price move = potential signal)
 
 **Key divergence patterns:**
+
 - 📈 Social volume spikes, price doesn't move → price move is likely coming
 - 📉 Price moves, social volume doesn't follow → move may lack conviction
 
@@ -67,16 +66,20 @@ Social Volume = the raw count of mentions. Use it to:
 This is the most powerful and underused feature. Instead of tracking an asset, track **competing sentiment words** against each other.
 
 ### The Buy vs Sell Signal
+
 Compare social volume of bullish words vs bearish words (e.g. "buy" vs "sell", "moon" vs "dump", "bullish" vs "bearish").
 
 **Interpretation (always contrarian):**
+
 - 🔴 **Strong dominance of bullish words** → crowd euphoria → **contrarian SELL signal**
 - 🟢 **Strong dominance of bearish words** → crowd panic → **contrarian BUY signal**
 
 The signal strength is proportional to how lopsided the dominance is. A 70/30 split is a mild signal. A 90/10 split is a strong one.
 
 ### What "Strong Dominance" Looks Like
+
 Look for:
+
 - One side consistently above the other for multiple candles (not just a single spike)
 - The gap widening, not narrowing
 - Absolute volume on the dominant side also elevated (not just the ratio)
@@ -93,32 +96,32 @@ Social Trends findings should **never be acted on in isolation**. After identify
 4. If signal is contrarian sell: look for chart-level resistance, overbought RSI, or declining volume
 5. If signal is contrarian buy: look for support levels, oversold conditions, or accumulation patterns
 
-Social Trends tells you *what the crowd thinks*. Charts tell you *whether the market has already priced it in*.
+Social Trends tells you _what the crowd thinks_. Charts tell you _whether the market has already priced it in_.
 
 ---
 
 ## Common Newcomer Mistakes to Correct
 
-| Mistake | Correction |
-|---------|-----------|
+| Mistake                              | Correction                                             |
+| ------------------------------------ | ------------------------------------------------------ |
 | "This coin is trending = buy signal" | Trending = crowd attention peaked = often the opposite |
-| Looking at 24h or 7d windows only | Use 1 month (1h) or 3 months (4h) for proper baseline |
-| Not checking source breakdown | Telegram-only spikes are spam — ignore them |
-| Acting on social data without Charts | Always cross-reference price action |
-| Treating all sentiment equally | Volume without source context is meaningless |
+| Looking at 24h or 7d windows only    | Use 1 month (1h) or 3 months (4h) for proper baseline  |
+| Not checking source breakdown        | Telegram-only spikes are spam — ignore them            |
+| Acting on social data without Charts | Always cross-reference price action                    |
+| Treating all sentiment equally       | Volume without source context is meaningless           |
 
 ---
 
 ## Quick Reference: Signal Cheat Sheet
 
-| What you see | What it means | Action |
-|---|---|---|
-| Small coin in top 3 trending | Retail euphoria peak | Contrarian sell signal |
-| Top trend is Telegram-only | Coordinated spam | Ignore entirely |
-| "Buy" words dominate heavily | Crowd all-in bullish | Contrarian sell |
-| "Sell" words dominate heavily | Crowd panic | Contrarian buy |
-| Social spike, price flat | Price move incoming | Watch closely + check Charts |
-| Trend distributed across all sources | Genuine organic interest | Worth investigating |
+| What you see                         | What it means            | Action                       |
+| ------------------------------------ | ------------------------ | ---------------------------- |
+| Small coin in top 3 trending         | Retail euphoria peak     | Contrarian sell signal       |
+| Top trend is Telegram-only           | Coordinated spam         | Ignore entirely              |
+| "Buy" words dominate heavily         | Crowd all-in bullish     | Contrarian sell              |
+| "Sell" words dominate heavily        | Crowd panic              | Contrarian buy               |
+| Social spike, price flat             | Price move incoming      | Watch closely + check Charts |
+| Trend distributed across all sources | Genuine organic interest | Worth investigating          |
 
 ---
 

@@ -7,6 +7,8 @@ sidebar:
   order: 10
 ---
 
+import instructionVideo from './instruction.mp4';
+
 Santiment's MCP (Model Context Protocol) connector gives Claude direct access to crypto market intelligence — on-chain metrics, social sentiment, trending narratives, and analyst insights — so you can research, validate, and analyze without leaving the conversation.
 
 ## Features
@@ -26,10 +28,22 @@ Note: currently this setting is not available in the moble app, but can be congi
 
 1. Open Claude and navigate to the Customize->Connectors section.
 2. Click on the "+" button to add a new connector and select "Add Custom Connector".
-3. Specify the name as **Santiment** and remote URL as `https://api.santiment.net/mcp` and click Add.
+3. Specify the name as **Santiment** and in `Remote MCP server URL` paste
+  
+  ```
+  https://api.santiment.net/mcp
+  ```
+
+  Then click `Add`.
 4. You'll be redirected to Santiment to authorize access via OAuth.
 5. Log in (or create a free account at [app.santiment.net](https://app.santiment.net)) and approve the connection.
 6. Start asking questions about any token, metric, or market condition.
+
+Video how to setup:
+
+<video autoplay loop muted playsinline>
+  <source src={instructionVideo} type="video/mp4" />
+</video>
 
 
 ### Claude Code CLI

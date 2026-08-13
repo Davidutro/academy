@@ -65,297 +65,619 @@ These metrics are deprecated, soon to be removed, or renamed.
 
 <Resource title="Market Data">
 
-Standard
-- [Price in USD, BTC, ETH, and USDT](/metrics/price)
-- [OHLC (Open-High-Low-Close)](/metrics/price/#ohlc)
-- [Daily Aggregated Financial Metrics in USD](/metrics/daily-aggregated-financial-metrics)
-- [Marketcap in USD](/metrics/marketcap)
-- [Fully Diluted Valuation in USD](/metrics/fully-diluted-valuation)
-- [Trading Volume in USD](/metrics/trading-volume)
-- [ETF Flow](/metrics/etf-flow)
-- [Funding Rates Aggregated, by Exchange, by Settlement Currency, and by Asset](/metrics/funding-rates-aggregated)
-- [Open Interest, Total, per Exchange, and per Settlement Currency](/metrics/open-interest)
-- [Liquidations](/metrics/liquidations)
+ETF
+- [Daily ETF Flow](/metrics/etf-flow)
+- [ETF Volume USD](/metrics/bitcoin-etf-volume)
+- [Total ETF Flow](/metrics/etf-flow)
+
+Funding Rates
+- [Funding Rate](/metrics/funding-rates-aggregated/#definition)
+- [Funding Rates Aggregated by Exchange](/metrics/funding-rates-aggregated)
+- [Funding Rates Aggregated by Settlement Currency](/metrics/funding-rates-aggregated)
+- [Total Funding Rates Aggregated per Asset](/metrics/funding-rates-aggregated)
 
 Indicators
+- [Adjusted Price DAA Divergence](/metrics/price-daa-divergence)
 - [BTC and S&P 500 Price Divergence](/metrics/btc-and-s-and-p-500-price-divergence)
+- [Price DAA Divergence](/metrics/price-daa-divergence)
 - [Price Volatility](/metrics/price-volatility)
 - [RSI](/metrics/rsi)
-- [Price and Daily Active Addresses Divergence](/metrics/price-daa-divergence)
-- [Adjusted Price and Daily Active Addresses Divergence](/metrics/price-daa-divergence)
-- [M2 Money Supply](/metrics/m2-money-supply)
+
+Marketcap
+- [Daily Average Market Cap USD](/metrics/daily-aggregated-financial-metrics)
+- [Daily Closing Market Cap USD](/metrics/daily-aggregated-financial-metrics)
+- [Fully Diluted Valuation USD](/metrics/fully-diluted-valuation)
+- [Market Cap USD](/metrics/marketcap)
+
+Open Interest
+- [Exchange Open Interest](/metrics/open-interest)
+- [Open Interest per Settlement Currency](/metrics/open-interest)
+- [Total Open Interest](/metrics/open-interest)
+
+Pricing
+- [Daily Average Price USD](/metrics/daily-aggregated-financial-metrics)
+- [Daily Closing Price USD](/metrics/daily-aggregated-financial-metrics)
+- [Daily High Price USD](/metrics/daily-aggregated-financial-metrics)
+- [Daily Low Price USD](/metrics/daily-aggregated-financial-metrics)
+- [Daily Opening Price USD](/metrics/daily-aggregated-financial-metrics)
+- [Price BTC](/metrics/price)
+- [Price ETH](/metrics/price)
+- [Price USD](/metrics/price)
+- [Price USD Change](/metrics/price)
+- [Price USDT](/metrics/price)
+
+Volume
+- [Daily Trading Volume USD](/metrics/daily-aggregated-financial-metrics)
+- [Volume USD](/metrics/trading-volume)
 
 </Resource>
 
 <Resource title="Development Data">
 
-- [Contributors Count](/metrics/development-activity/development-activity-contributors-count)
+Development Activity
 - [Development Activity](/metrics/development-activity/development-activity)
-- [Github Activity](/metrics/development-activity/github-activity)
-- [Github Contributor Count](/metrics/development-activity/github-activity-contributors-count)
+- [Moving Average Development Activity Change](/metrics/development-activity/development-activity)
+
+Development Activity Contributors
+- [Development Activity Contributors Count](/metrics/development-activity/development-activity-contributors-count)
+
+Github Activity
+- [GitHub Activity](/metrics/development-activity/github-activity)
+
+Github Activity Contributors Count
+- [GitHub Activity Contributors Count](/metrics/development-activity/github-activity-contributors-count)
 
 </Resource>
 
 <Resource title="Social Data">
 
-- [Social Data Overview](/metrics/details/social-data).
+Bearish Sentiment, Bullish/Bearish/Neutral Sentiment
+- [Sentiment Bearish 4chan](/metrics/sentiment-metrics/bullish-bearish-sentiment-metrics)
+- [Sentiment Bearish Bitcointalk](/metrics/sentiment-metrics/bullish-bearish-sentiment-metrics)
+- [Sentiment Bearish Reddit](/metrics/sentiment-metrics/bullish-bearish-sentiment-metrics)
+- [Sentiment Bearish Telegram](/metrics/sentiment-metrics/bullish-bearish-sentiment-metrics)
+- [Sentiment Bearish Total](/metrics/sentiment-metrics/bullish-bearish-sentiment-metrics)
+- [Sentiment Bearish Twitter](/metrics/sentiment-metrics/bullish-bearish-sentiment-metrics)
 
+Bullish Sentiment, Bullish/Bearish/Neutral Sentiment
+- [Sentiment Bullish 4chan](/metrics/sentiment-metrics/bullish-bearish-sentiment-metrics)
+- [Sentiment Bullish Bitcointalk](/metrics/sentiment-metrics/bullish-bearish-sentiment-metrics)
+- [Sentiment Bullish Reddit](/metrics/sentiment-metrics/bullish-bearish-sentiment-metrics)
+- [Sentiment Bullish Telegram](/metrics/sentiment-metrics/bullish-bearish-sentiment-metrics)
+- [Sentiment Bullish Total](/metrics/sentiment-metrics/bullish-bearish-sentiment-metrics)
+- [Sentiment Bullish Twitter](/metrics/sentiment-metrics/bullish-bearish-sentiment-metrics)
 
-- [Social Dominance](/metrics/social-dominance)
-- [Social Volume](/metrics/social-volume)
-- [Social Volume AI](/metrics/social-volume-ai)
-- [Unique Social Volume](/metrics/unique-social-volume)
-- [Community Social Volume](/metrics/community-social-volume)
+Community Social Volume
+- [Community Social Volume Reddit](/metrics/social-volume)
+- [Community Social Volume Telegram](/metrics/social-volume)
 
-- [Sentiment Metrics](/metrics/sentiment-metrics)
+Negative Sentiment, Regular Sentiment
+- [Sentiment Negative 4chan](/metrics/sentiment-metrics/positive-negative-sentiment-metrics)
+- [Sentiment Negative Bitcointalk](/metrics/sentiment-metrics/positive-negative-sentiment-metrics)
+- [Sentiment Negative Reddit](/metrics/sentiment-metrics/positive-negative-sentiment-metrics)
+- [Sentiment Negative Telegram](/metrics/sentiment-metrics/positive-negative-sentiment-metrics)
+- [Sentiment Negative Total](/metrics/sentiment-metrics/positive-negative-sentiment-metrics)
+- [Sentiment Negative Twitter](/metrics/sentiment-metrics/positive-negative-sentiment-metrics)
+- [Sentiment Negative YouTube Videos](/metrics/sentiment-metrics/positive-negative-sentiment-metrics)
 
-- [Trending Coins](/metrics/trending-coins)
-- [Trending Stories](/metrics/trending-stories)
-- [Trending Words](/metrics/emerging-trends)
+Neutral Sentiment, Bullish/Bearish/Neutral Sentiment
+- [Sentiment Neutral 4chan](/metrics/sentiment-metrics/bullish-bearish-sentiment-metrics)
+- [Sentiment Neutral Bitcointalk](/metrics/sentiment-metrics/bullish-bearish-sentiment-metrics)
+- [Sentiment Neutral Reddit](/metrics/sentiment-metrics/bullish-bearish-sentiment-metrics)
+- [Sentiment Neutral Telegram](/metrics/sentiment-metrics/bullish-bearish-sentiment-metrics)
+- [Sentiment Neutral Total](/metrics/sentiment-metrics/bullish-bearish-sentiment-metrics)
+- [Sentiment Neutral Twitter](/metrics/sentiment-metrics/bullish-bearish-sentiment-metrics)
+
+Positive Sentiment, Regular Sentiment
+- [Sentiment Positive 4chan](/metrics/sentiment-metrics/positive-negative-sentiment-metrics)
+- [Sentiment Positive Bitcointalk](/metrics/sentiment-metrics/positive-negative-sentiment-metrics)
+- [Sentiment Positive Reddit](/metrics/sentiment-metrics/positive-negative-sentiment-metrics)
+- [Sentiment Positive Telegram](/metrics/sentiment-metrics/positive-negative-sentiment-metrics)
+- [Sentiment Positive Total](/metrics/sentiment-metrics/positive-negative-sentiment-metrics)
+- [Sentiment Positive Twitter](/metrics/sentiment-metrics/positive-negative-sentiment-metrics)
+- [Sentiment Positive YouTube Videos](/metrics/sentiment-metrics/positive-negative-sentiment-metrics)
+
+Sentiment Balance, Regular Sentiment
+- [Sentiment Balance 4chan](/metrics/sentiment-metrics/positive-negative-sentiment-metrics)
+- [Sentiment Balance Bitcointalk](/metrics/sentiment-metrics/positive-negative-sentiment-metrics)
+- [Sentiment Balance Reddit](/metrics/sentiment-metrics/positive-negative-sentiment-metrics)
+- [Sentiment Balance Telegram](/metrics/sentiment-metrics/positive-negative-sentiment-metrics)
+- [Sentiment Balance Total](/metrics/sentiment-metrics/positive-negative-sentiment-metrics)
+- [Sentiment Balance Twitter](/metrics/sentiment-metrics/positive-negative-sentiment-metrics)
+- [Sentiment Balance YouTube Videos](/metrics/sentiment-metrics/positive-negative-sentiment-metrics)
+
+Social Dominance
+- [Social Dominance 4chan](/metrics/social-dominance)
+- [Social Dominance AI Total](/metrics/social-dominance)
+- [Social Dominance Bitcointalk](/metrics/social-dominance)
+- [Social Dominance Reddit](/metrics/social-dominance)
+- [Social Dominance Telegram](/metrics/social-dominance)
+- [Social Dominance Total](/metrics/social-dominance)
+- [Social Dominance Twitter](/metrics/deprecated-metrics)
+- [Social Dominance YouTube Videos](/metrics/social-dominance)
+
+Social Volume
+- [Social Volume 4chan](/metrics/social-volume)
+- [Social Volume Bitcointalk](/metrics/social-volume)
+- [Social Volume Reddit](/metrics/social-volume)
+- [Social Volume Telegram](/metrics/social-volume)
+- [Social Volume Total](/metrics/social-volume)
+- [Social Volume Twitter](/metrics/social-volume)
+- [Social Volume YouTube Videos](/metrics/social-volume)
+
+Social Volume AI Total
+- [Social Volume AI Total](/metrics/social-volume-ai)
+
+Trending Insights
 - [Trending Words Rank](/metrics/trending-words-rank)
-- [Community Messages Count](/metrics/community-messages-count)
-- [X.com/Twitter followers](CREATE PAGE**********)
+
+Unique Social Volume
+- [Unique Social Volume 4chan](/metrics/unique-social-volume)
+- [Unique Social Volume Bitcointalk](/metrics/unique-social-volume)
+- [Unique Social Volume Reddit](/metrics/unique-social-volume)
+- [Unique Social Volume Telegram](/metrics/unique-social-volume)
+- [Unique Social Volume Total](/metrics/unique-social-volume)
+- [Unique Social Volume Twitter](/metrics/unique-social-volume)
+
+Weighted Sentiment, Regular Sentiment
+- [Sentiment Volume Consumed 4chan](/metrics/sentiment-metrics/weighted-sentiment-metrics)
+- [Sentiment Volume Consumed Bitcointalk](/metrics/sentiment-metrics/weighted-sentiment-metrics)
+- [Sentiment Volume Consumed Reddit](/metrics/sentiment-metrics/weighted-sentiment-metrics)
+- [Sentiment Volume Consumed Telegram](/metrics/sentiment-metrics/weighted-sentiment-metrics)
+- [Sentiment Volume Consumed Total](/metrics/sentiment-metrics/weighted-sentiment-metrics)
+- [Sentiment Volume Consumed Twitter](/metrics/deprecated-metrics)
+- [Sentiment Volume Consumed YouTube Videos](/metrics/sentiment-metrics/weighted-sentiment-metrics)
+- [Sentiment Weighted 4chan](/metrics/sentiment-metrics/weighted-sentiment-metrics)
+- [Sentiment Weighted Bitcointalk](/metrics/sentiment-metrics/weighted-sentiment-metrics)
+- [Sentiment Weighted Reddit](/metrics/sentiment-metrics/weighted-sentiment-metrics)
+- [Sentiment Weighted Telegram](/metrics/sentiment-metrics/weighted-sentiment-metrics)
+- [Sentiment Weighted Total](/metrics/sentiment-metrics/weighted-sentiment-metrics)
+- [Sentiment Weighted Twitter](/metrics/deprecated-metrics)
+- [Sentiment Weighted YouTube Videos](/metrics/sentiment-metrics/weighted-sentiment-metrics)
 
 </Resource>
 
 <Resource title="OnChain Data">
 
-Overview
-
-Ethereum Fees
-
-Holder Distribution
-- [Age Consumed](/metrics/age-consumed)
-- [Amount in Top Holders](/metrics/amount-in-top-holders)
-- [Realized Value](/metrics/realized-value)
-- [Mean Realized Price](/metrics/mean-realized-price)
-- [Market Value Realized Value](/metrics/mvrv)
-- [Network Profit Loss](/metrics/network-profit-loss)
-- [Realized Market Capitalization Hodl Waves](/metrics/realized-market-capitalization-hodl-waves)
-- [Supply Distribution](/metrics/supply-distribution)
-- [Supply On Or Outside Exchanges](/metrics/supply-on-or-outside-exchanges)
-- [Total Supply](/metrics/total-supply)
-- [Top Holders](/metrics/top-holders)
-- [Transaction Count](/metrics/transaction-count)
-- [Transaction Size](/metrics/transaction-size)
-- [Transaction Volume](/metrics/transaction-volume)
-- [Transaction Volume In Profit Or Loss](/metrics/transaction-volume-in-profit-or-loss)
-- [Velocity](/metrics/velocity)
-- [Whale Transaction Count](/metrics/whale-transaction-count)
-- [Whale Transaction Volume](/metrics/whale-transaction-volume)
-
-Network Activity
+Address Activity, Network Activity
+- [Active Addresses](/metrics/active-addresses-24h)
 - [Daily Active Addresses](/metrics/daily-active-addresses)
-- [Active Addresses 24h](/metrics/active-addresses-24h)
-- [Active Deposits](/metrics/active-deposits)
-- [Active Withdrawals](/metrics/active-withdrawals)
 - [Network Growth](/metrics/network-growth)
 
-Network Value
-- [MVRV](/metrics/mvrv)
-- [Network Value to Transaction](/metrics/nvt)
+Circulation and Dormancy, Network Activity
+- [Circulation](/metrics/circulation)
+- [Circulation USD](/metrics/circulation)
+- [Dormant Circulation](/metrics/dormant-circulation)
+- [Dormant Circulation USD](/metrics/dormant-circulation)
+- [Network Circulation USD](/metrics/ethereum-fees)
+- [Velocity](/metrics/velocity)
 
-Staking
+Coin Age and Dormant Supply, Network Value
+- [Age Consumed](/metrics/age-consumed)
+- [Age Destroyed](/metrics/age-consumed)
+- [Mean Age](/metrics/mean-coin-age)
+- [Mean Dollar Invested Age](/metrics/mean-coin-age)
+- [Percent of Spent Coins Age Band](/metrics/spent-coins-age-band)
+- [Spent Coins Age Band](/metrics/spent-coins-age-band)
 
-Mining
+Contract-Related, Network Activity
+- [New Deployed Contracts](/metrics/new-deployed-contracts)
 
-XRPL Chain Metrics
+Fees
+- [Average Fees USD](/metrics/ethereum-fees)
+- [Average Gas Used](/metrics/ethereum-fees)
+- [Fees](/metrics/ethereum-fees)
+- [Fees Burnt](/metrics/ethereum-fees)
+- [Fees Burnt USD](/metrics/ethereum-fees)
+- [Fees USD](/metrics/ethereum-fees)
+- [Fees to Network Circulation USD](/metrics/ethereum-fees)
+- [Median Fees USD](/metrics/ethereum-fees)
+- [Total Gas Used](/metrics/ethereum-fees)
+
+Holders Distribution
+
+Each of these metrics is available broken down by balance-size bucket (e.g. 0 to 0.001, 0.001 to 0.01, 0.01 to 0.1, 0.1 to 1, 1 to 10, 10 to 100, 100 to 1k, 1k to 10k, 10k to 100k, 100k to 1M, 1M to 10M, etc., up to a 10M+/1B+ bucket), plus an all-holders total.
+
+- [Active Holders Distribution](/metrics/supply-distribution/amount-of-holders)
+- [Active Holders Distribution by Combined Balance](/metrics/supply-distribution/combined-balance-of-holders)
+- [Holders Distribution](/metrics/supply-distribution/amount-of-holders)
+- [Holders Distribution by Combined Balance](/metrics/supply-distribution/combined-balance-of-holders)
+- [Percent of Active Holders Distribution](/metrics/supply-distribution/amount-of-holders)
+- [Percent of Active Holders Distribution by Combined Balance](/metrics/supply-distribution/combined-balance-of-holders)
+- [Percent of Holders Distribution](/metrics/supply-distribution/amount-of-holders)
+- [Percent of Holders Distribution by Combined Balance](/metrics/supply-distribution/combined-balance-of-holders)
+
+MVRV and Valuation, Network Value
+- [MVRV Long Short Difference USD](/metrics/mvrv)
+- [MVRV USD](/metrics/mvrv)
+- [MVRV USD Z Score](/metrics/mvrv)
+- [Mean Realized Price USD](/metrics/mean-realized-price)
+- [Realized Cap HODL Waves](/metrics/realized-market-capitalization-hodl-waves)
+- [Realized Value USD](/metrics/realized-value)
+
+Miners
+- [Average Difficulty](/metrics/difficulty)
 
 NFT
+- [NFT Trade Volume USD](/metrics/nft-trade-volume-usd)
+- [NFT Trades Count](/metrics/nft-trades-count)
 
-Other On-Chain Metrics
-
-- [Circulation](/metrics/circulation)
-- [CrvUSD Savings](/metrics/crvusd-savings)
-- [Debt](/metrics/debt)
-- [Difficulty](/metrics/difficulty)
-- [Dormant Circulation](/metrics/dormant-circulation)
-- [ETH 2.0](/metrics/eth-2)
-- [Ethena Protocol](/metrics/ethena-protocol)
-- [Exchange Funds Flow](/metrics/exchange-funds-flow)
-- [GHO Savings](/metrics/gho-savings)
-- [Lending and Borrowing Protocols](/metrics/lending-and-borrowing-protocols)
-- [MakerDAO DAI Savings Rate](/metrics/makerdao-dai-savings-rate)
-- [New Deployed Contracts](/metrics/new-deployed-contracts)
-- [Pendle Markets](/metrics/pendle-markets)
-- [Sky Savings](/metrics/sky-savings)
-- [Spent Coins Age Band](/metrics/spent-coins-age-band)
-- [Stock To Flow ratio](/metrics/stock-to-flow)
-- [Thermocap](/metrics/thermocap)
-
-- [Decentralized Exchange Metrics](/metrics/decentralized-exchange-metrics)
-- [Ethereum Fees](/metrics/ethereum-fees)
-- [Ethereum Spent](/metrics/ethereum-spent)
-- [Mean Coin Age](/metrics/mean-coin-age)
-- [Annual Inflation Rate](/metrics/annual-inflation-rate)
-- [Gini Index](/metrics/gini-index)
-- [Transacted Coin Acquisition Cost](/metrics/transacted-coin-acquisition-cost)
-
-</Resource>
-
---------------------------------------------------
-
-<Resource title="OnChain Data">
-
-Holder Data
-- [Age Consumed](/metrics/age-consumed)
-- [Amount in Top Holders](/metrics/amount-in-top-holders)
-- [MVRV](/metrics/mvrv)
+Network Profit-Loss and Supply, Network Value
 - [NVT](/metrics/nvt)
-- [Realized Value](/metrics/realized-value)
-- [Mean Realized Price](/metrics/mean-realized-price)
+- [NVT Transaction Volume](/metrics/nvt)
 - [Network Profit Loss](/metrics/network-profit-loss)
-- [Realized Market Capitalization Hodl Waves](/metrics/realized-market-capitalization-hodl-waves)
-- [Supply Distribution](/metrics/supply-distribution)
-- [Supply On Or Outside Exchanges](/metrics/supply-on-or-outside-exchanges)
-- [Total Supply](/metrics/total-supply)
-- [Top Holders](/metrics/top-holders)
-- [Transaction Count](/metrics/transaction-count)
-- [Transaction Size](/metrics/transaction-size)
-- [Transaction Volume](/metrics/transaction-volume)
-- [Transaction Volume In Profit Or Loss](/metrics/transaction-volume-in-profit-or-loss)
-- [Velocity](/metrics/velocity)
-- [Whale Transaction Count](/metrics/whale-transaction-count)
-- [Whale Transaction Volume](/metrics/whale-transaction-volume)
+- [Percent of Total Supply in Profit](/metrics/total-supply)
+- [Stock to Flow](/metrics/stock-to-flow)
+- [Total Supply in Profit](/metrics/total-supply)
 
-Network Activity
-- [Daily Active Addresses](/metrics/daily-active-addresses)
-- [Active Addresses 24h](/metrics/active-addresses-24h)
-- [Active Deposits](/metrics/active-deposits)
-- [Active Withdrawals](/metrics/active-withdrawals)
-- [Network Growth](/metrics/network-growth)
-
-Other On-Chain Metrics
-
-- [Circulation](/metrics/circulation)
-- [CrvUSD Savings](/metrics/crvusd-savings)
-- [Debt](/metrics/debt)
-- [Difficulty](/metrics/difficulty)
-- [Dormant Circulation](/metrics/dormant-circulation)
-- [ETH 2.0](/metrics/eth-2)
-- [Ethena Protocol](/metrics/ethena-protocol)
-- [Exchange Funds Flow](/metrics/exchange-funds-flow)
-- [GHO Savings](/metrics/gho-savings)
-- [MakerDAO DAI Savings Rate](/metrics/makerdao-dai-savings-rate)
-- [New Deployed Contracts](/metrics/new-deployed-contracts)
-- [Pendle Markets](/metrics/pendle-markets)
-- [Sky Savings](/metrics/sky-savings)
-- [Spent Coins Age Band](/metrics/spent-coins-age-band)
-- [Stock To Flow ratio](/metrics/stock-to-flow)
-- [Thermocap](/metrics/thermocap)
-
-- [Decentralized Exchange Metrics](/metrics/decentralized-exchange-metrics)
-- [Ethereum Fees](/metrics/ethereum-fees)
-- [Ethereum Spent](/metrics/ethereum-spent)
-- [Mean Coin Age](/metrics/mean-coin-age)
+Overview
 - [Annual Inflation Rate](/metrics/annual-inflation-rate)
 - [Gini Index](/metrics/gini-index)
-- [Transacted Coin Acquisition Cost](/metrics/transacted-coin-acquisition-cost)
+- [MCD ERC20 Supply](/metrics/mvrv)
+- [Total Supply](/metrics/mvrv)
+
+Staking
+- [ETH Beacon Deposits](/metrics/eth-2)
+- [ETH Beacon Reward Withdrawals](/metrics/eth-2)
+- [ETH Beacon Validator Withdrawals](/metrics/eth-2)
+- [ETH2 Staked Address Count per Label](/metrics/eth-2)
+- [ETH2 Staked Amount per Label](/metrics/eth-2)
+- [ETH2 Stakers Count](/metrics/eth-2)
+- [ETH2 Stakers MVRV USD](/metrics/eth-2)
+- [ETH2 Stakers Realized Value USD](/metrics/eth-2)
+- [ETH2 Top Stakers](/metrics/eth-2)
+
+Transaction and Payment, Network Activity
+- [Average Transfer](/metrics/transaction-size)
+- [Median Transfer](/metrics/transaction-size)
+- [Payments Count](/metrics/transaction-count)
+- [Transaction Volume](/metrics/transaction-volume)
+- [Transaction Volume Profit Loss Ratio](/metrics/transaction-volume-in-profit-or-loss)
+- [Transaction Volume USD](/metrics/transaction-volume)
+- [Transaction Volume in Loss](/metrics/transaction-volume-in-profit-or-loss)
+- [Transaction Volume in Profit](/metrics/transaction-volume-in-profit-or-loss)
+- [Transactions Count](/metrics/transaction-count)
 
 </Resource>
 
 <Resource title="OnChain Labels">
 
-- [Labeled Balance](/metrics/labeled-balance)
-- [Labeled Exchange](/metrics/labeled-exchange)
-
-We have a number of API methods related to blockchain addresses.
-The list of supported blockchains [can be found here](/sanapi/supported-blockchains/).
-Some of these methods return [timeseries](/sanapi/fetching-metrics/#timeseriesdatajson) and others return tables, e.g., "Top Transfers Table".
-
-- [Historical Balance](/metrics/historical-balance)
-- [Labelled Historical Balance](/metrics/labelled-historical-balance)
-- [Latest Transactions](/metrics/latest-transactions)
-- [Contract Transaction Count](/metrics/contract-transactions-count)
-- [Contract Interacting Address Count](/metrics/contract-interacting-address-count)
-
-- [Lending and Borrowing Protocols](/metrics/lending-and-borrowing-protocols)
-- [Aggregated Lending and Borrowing Metrics](/metrics/lending-and-borrowing-protocols/aggregate-metrics)
-- Yield, Savings & Staking -** Create common page  that will include links to the Ethena, Sky, Pendle, Curve, Gho pages.
-- DEXes(On the metrics page)
-- NFT(On the metrics page)
-
-- **Centralized Exchanges(On the metrics page) -** Create common page for Cex metrics with links on pages:
--Active Withdrawals
--Active Deposits
--Funds Flow
--Supply on exchanges
--Labeled exchanges
-
-- **Whales(on the metrics page) -** Create common page with links on the pages:
-Whale volume. Whale transactions.
-
-**Labeled Supply distribution(On the metrics page)**
-
-**Top holders(On the metrics page)**
-
-**Labeled Balances(On the metrics page)**
-
-</Resource>
-
-
-DRAFTS
-
-<Resource title="OnChain Data">
-
-Holder Data
-- [Age Consumed](/metrics/age-consumed)
-- [Amount in Top Holders](/metrics/amount-in-top-holders)
-- [Realized Value](/metrics/realized-value)
-- [Mean Realized Price](/metrics/mean-realized-price)
-- [Market Value Realized Value](/metrics/mvrv)
-- [Network Profit Loss](/metrics/network-profit-loss)
-- [Realized Market Capitalization Hodl Waves](/metrics/realized-market-capitalization-hodl-waves)
-- [Supply Distribution](/metrics/supply-distribution)
-- [Supply On Or Outside Exchanges](/metrics/supply-on-or-outside-exchanges)
-- [Total Supply](/metrics/total-supply)
-- [Top Holders](/metrics/top-holders)
-- [Transaction Count](/metrics/transaction-count)
-- [Transaction Size](/metrics/transaction-size)
-- [Transaction Volume](/metrics/transaction-volume)
-- [Transaction Volume In Profit Or Loss](/metrics/transaction-volume-in-profit-or-loss)
-- [Velocity](/metrics/velocity)
-- [Whale Transaction Count](/metrics/whale-transaction-count)
-- [Whale Transaction Volume](/metrics/whale-transaction-volume)
-
-Network Activity
-- [Daily Active Addresses](/metrics/daily-active-addresses)
-- [Active Addresses 24h](/metrics/active-addresses-24h)
-- [Active Deposits](/metrics/active-deposits)
+Centralized Exchanges
+- [Active Deposits](/metrics/daily-active-deposits)
+- [Active Deposits per Exchange](/metrics/labeled-exchange)
 - [Active Withdrawals](/metrics/active-withdrawals)
-- [Network Growth](/metrics/network-growth)
+- [Active Withdrawals per Exchange](/metrics/labeled-exchange)
+- [Deposit Transactions](/metrics/daily-active-deposits)
+- [Deposit Transactions per Exchange](/metrics/labeled-exchange)
+- [Exchange Balance](/metrics/exchange-funds-flow)
+- [Exchange Inflow](/metrics/exchange-funds-flow)
+- [Exchange Inflow USD](/metrics/exchange-funds-flow)
+- [Exchange Inflow per Exchange](/metrics/labeled-balance)
+- [Exchange Outflow](/metrics/exchange-funds-flow)
+- [Exchange Outflow USD](/metrics/exchange-funds-flow)
+- [Exchange Outflow per Exchange](/metrics/labeled-balance)
+- [Inflow per Label and Owner](/metrics/labeled-balance)
+- [Outflow per Label and Owner](/metrics/labeled-balance)
+- [Percent of Total Supply on Exchanges](/metrics/supply-on-or-outside-exchanges)
+- [Supply Outside Exchanges](/metrics/supply-on-or-outside-exchanges)
+- [Supply on Exchanges](/metrics/supply-on-or-outside-exchanges)
+- [Withdrawal Transactions](/metrics/active-withdrawals)
+- [Withdrawal Transactions per Exchange](/metrics/labeled-exchange)
 
-Network Value
-- [MVRV](/metrics/mvrv)
-- [Network Value to Transaction](/metrics/nvt)
+DEXes
+- [ETH Based Trade Amount by DEX](/metrics/decentralized-exchange-metrics)
+- [ETH Based Trade Volume by DEX](/metrics/decentralized-exchange-metrics)
+- [ETH Trade Volume by Token](/metrics/decentralized-exchange-metrics)
+- [Other Trade Amount by DEX](/metrics/decentralized-exchange-metrics)
+- [Other Trade Volume by DEX](/metrics/decentralized-exchange-metrics)
+- [Stablecoin Trade Amount by DEX](/metrics/decentralized-exchange-metrics)
+- [Stablecoin Trade Volume by DEX](/metrics/decentralized-exchange-metrics)
+- [Stablecoin Trade Volume by Token](/metrics/decentralized-exchange-metrics)
+- [Token ETH Price by DEX](/metrics/decentralized-exchange-metrics)
+- [Total Trade Amount by DEX](/metrics/decentralized-exchange-metrics)
+- [Total Trade Volume by DEX](/metrics/decentralized-exchange-metrics)
 
+Labeled Balances
+- [Balance per Label and Owner Delta](/metrics/labeled-balance)
+- [Exchange Balance per Exchange](/metrics/labeled-balance)
 
-Other On-Chain Metrics
+Labeled Supply Distribution
 
-- [Circulation](/metrics/circulation)
-- [CrvUSD Savings](/metrics/crvusd-savings)
-- [Debt](/metrics/debt)
-- [Difficulty](/metrics/difficulty)
-- [Dormant Circulation](/metrics/dormant-circulation)
-- [ETH 2.0](/metrics/eth-2)
-- [Ethena Protocol](/metrics/ethena-protocol)
-- [Exchange Funds Flow](/metrics/exchange-funds-flow)
-- [GHO Savings](/metrics/gho-savings)
-- [Lending and Borrowing Protocols](/metrics/lending-and-borrowing-protocols)
-- [MakerDAO DAI Savings Rate](/metrics/makerdao-dai-savings-rate)
-- [New Deployed Contracts](/metrics/new-deployed-contracts)
-- [Pendle Markets](/metrics/pendle-markets)
-- [Sky Savings](/metrics/sky-savings)
-- [Spent Coins Age Band](/metrics/spent-coins-age-band)
-- [Stock To Flow ratio](/metrics/stock-to-flow)
-- [Thermocap](/metrics/thermocap)
+Each of these metrics is available broken down by balance-size bucket (e.g. 0 to 0.001, 0.001 to 0.01, 0.01 to 0.1, 0.1 to 1, 1 to 10, 10 to 100, 100 to 1k, 1k to 10k, 10k to 100k, 100k to 1M, 1M to 10M, etc., up to a 10M+/1B+ bucket), plus an all-holders total.
 
-- [Decentralized Exchange Metrics](/metrics/decentralized-exchange-metrics)
-- [Ethereum Fees](/metrics/ethereum-fees)
-- [Ethereum Spent](/metrics/ethereum-spent)
-- [Mean Coin Age](/metrics/mean-coin-age)
-- [Annual Inflation Rate](/metrics/annual-inflation-rate)
-- [Gini Index](/metrics/gini-index)
-- [Transacted Coin Acquisition Cost](/metrics/transacted-coin-acquisition-cost)
+- [Labeled Holders Distribution](/metrics/supply-distribution/amount-of-labeled-holders)
+- [Labeled Holders Distribution by Combined Balance](/metrics/supply-distribution/combined-balance-of-labeled-holders)
+- [Negative Labeled Holders Distribution](/metrics/supply-distribution/amount-of-labeled-holders)
+- [Negative Labeled Holders Distribution by Combined Balance](/metrics/supply-distribution/combined-balance-of-labeled-holders)
+
+Lending and Borrowing Protocols
+- [Aave Safety Module APR](/metrics/lending-and-borrowing-protocols/aave-safety-module)
+- [Aave Safety Module Amount](/metrics/lending-and-borrowing-protocols/aave-safety-module)
+- [Aave Safety Module Amount USD](/metrics/lending-and-borrowing-protocols/aave-safety-module)
+- [Aave Safety Module Emission USD](/metrics/lending-and-borrowing-protocols/aave-safety-module)
+- [Aave Safety Module Total Amount USD](/metrics/lending-and-borrowing-protocols/aave-safety-module)
+- [Aave Safety Module Total Emission USD](/metrics/lending-and-borrowing-protocols/aave-safety-module)
+- [Aave V2 Action Deposits](/metrics/lending-and-borrowing-protocols/aave-v2)
+- [Aave V2 Action Deposits USD](/metrics/lending-and-borrowing-protocols/aave-v2)
+- [Aave V2 Action Liquidations](/metrics/lending-and-borrowing-protocols/aave-v2)
+- [Aave V2 Action Liquidations USD](/metrics/lending-and-borrowing-protocols/aave-v2)
+- [Aave V2 Action New Debt](/metrics/lending-and-borrowing-protocols/aave-v2)
+- [Aave V2 Action New Debt USD](/metrics/lending-and-borrowing-protocols/aave-v2)
+- [Aave V2 Action Repayments](/metrics/lending-and-borrowing-protocols/aave-v2)
+- [Aave V2 Action Repayments USD](/metrics/lending-and-borrowing-protocols/aave-v2)
+- [Aave V2 Active Addresses](/metrics/lending-and-borrowing-protocols/aave-v2)
+- [Aave V2 Protocol Total Borrowed USD](/metrics/lending-and-borrowing-protocols/aave-v2)
+- [Aave V2 Protocol Total Supplied USD](/metrics/lending-and-borrowing-protocols/aave-v2)
+- [Aave V2 Revenue](/metrics/lending-and-borrowing-protocols/aave-v2)
+- [Aave V2 Revenue USD](/metrics/lending-and-borrowing-protocols/aave-v2)
+- [Aave V2 Stable Borrow APY](/metrics/lending-and-borrowing-protocols/aave-v2)
+- [Aave V2 Supply APY](/metrics/lending-and-borrowing-protocols/aave-v2)
+- [Aave V2 Total Borrowed](/metrics/lending-and-borrowing-protocols/aave-v2)
+- [Aave V2 Total Borrowed USD](/metrics/lending-and-borrowing-protocols/aave-v2)
+- [Aave V2 Total Deposits USD](/metrics/lending-and-borrowing-protocols/aave-v2)
+- [Aave V2 Total Liquidations USD](/metrics/lending-and-borrowing-protocols/aave-v2)
+- [Aave V2 Total New Debt USD](/metrics/lending-and-borrowing-protocols/aave-v2)
+- [Aave V2 Total Protocol Cumulative Revenue USD](/metrics/lending-and-borrowing-protocols/aave-v2)
+- [Aave V2 Total Protocol Revenue USD](/metrics/lending-and-borrowing-protocols/aave-v2)
+- [Aave V2 Total Repayments USD](/metrics/lending-and-borrowing-protocols/aave-v2)
+- [Aave V2 Total Supplied](/metrics/lending-and-borrowing-protocols/aave-v2)
+- [Aave V2 Total Supplied USD](/metrics/lending-and-borrowing-protocols/aave-v2)
+- [Aave V2 Variable Borrow APY](/metrics/lending-and-borrowing-protocols/aave-v2)
+- [Aave V3 Action Age Repayments](/metrics/lending-and-borrowing-protocols/aave-v3)
+- [Aave V3 Action Deposits](/metrics/lending-and-borrowing-protocols/aave-v3)
+- [Aave V3 Action Deposits USD](/metrics/lending-and-borrowing-protocols/aave-v3)
+- [Aave V3 Action Liquidations](/metrics/lending-and-borrowing-protocols/aave-v3)
+- [Aave V3 Action Liquidations USD](/metrics/lending-and-borrowing-protocols/aave-v3)
+- [Aave V3 Action New Debt](/metrics/lending-and-borrowing-protocols/aave-v3)
+- [Aave V3 Action New Debt USD](/metrics/lending-and-borrowing-protocols/aave-v3)
+- [Aave V3 Action Repayments](/metrics/lending-and-borrowing-protocols/aave-v3)
+- [Aave V3 Action Repayments USD](/metrics/lending-and-borrowing-protocols/aave-v3)
+- [Aave V3 Active Addresses](/metrics/lending-and-borrowing-protocols/aave-v3)
+- [Aave V3 Flash Loan](/metrics/lending-and-borrowing-protocols/aave-v3)
+- [Aave V3 Flash Loan USD](/metrics/lending-and-borrowing-protocols/aave-v3)
+- [Aave V3 Protocol Total Borrowed USD](/metrics/lending-and-borrowing-protocols/aave-v3)
+- [Aave V3 Protocol Total Supplied USD](/metrics/lending-and-borrowing-protocols/aave-v3)
+- [Aave V3 Revenue](/metrics/lending-and-borrowing-protocols/aave-v3)
+- [Aave V3 Revenue USD](/metrics/lending-and-borrowing-protocols/aave-v3)
+- [Aave V3 Supply APY](/metrics/lending-and-borrowing-protocols/aave-v3)
+- [Aave V3 Total Borrowed](/metrics/lending-and-borrowing-protocols/aave-v3)
+- [Aave V3 Total Borrowed USD](/metrics/lending-and-borrowing-protocols/aave-v3)
+- [Aave V3 Total Deposits USD](/metrics/lending-and-borrowing-protocols/aave-v3)
+- [Aave V3 Total Flash Loan USD](/metrics/lending-and-borrowing-protocols/aave-v3)
+- [Aave V3 Total Liquidations USD](/metrics/lending-and-borrowing-protocols/aave-v3)
+- [Aave V3 Total New Debt USD](/metrics/lending-and-borrowing-protocols/aave-v3)
+- [Aave V3 Total Protocol Cumulative Revenue USD](/metrics/lending-and-borrowing-protocols/aave-v3)
+- [Aave V3 Total Protocol Revenue USD](/metrics/lending-and-borrowing-protocols/aave-v3)
+- [Aave V3 Total Repayments USD](/metrics/lending-and-borrowing-protocols/aave-v3)
+- [Aave V3 Total Supplied](/metrics/lending-and-borrowing-protocols/aave-v3)
+- [Aave V3 Total Supplied USD](/metrics/lending-and-borrowing-protocols/aave-v3)
+- [Aave V3 Variable Borrow APY](/metrics/lending-and-borrowing-protocols/aave-v3)
+- [Compound Action Deposits](/metrics/lending-and-borrowing-protocols/compound)
+- [Compound Action Deposits USD](/metrics/lending-and-borrowing-protocols/compound)
+- [Compound Action Liquidations](/metrics/lending-and-borrowing-protocols/compound)
+- [Compound Action Liquidations USD](/metrics/lending-and-borrowing-protocols/compound)
+- [Compound Action New Debt](/metrics/lending-and-borrowing-protocols/compound)
+- [Compound Action New Debt USD](/metrics/lending-and-borrowing-protocols/compound)
+- [Compound Action Repayments](/metrics/lending-and-borrowing-protocols/compound)
+- [Compound Action Repayments USD](/metrics/lending-and-borrowing-protocols/compound)
+- [Compound Active Addresses](/metrics/lending-and-borrowing-protocols/compound)
+- [Compound Borrow APY](/metrics/lending-and-borrowing-protocols/compound)
+- [Compound Protocol Total Borrowed USD](/metrics/lending-and-borrowing-protocols/compound)
+- [Compound Protocol Total Supplied USD](/metrics/lending-and-borrowing-protocols/compound)
+- [Compound Revenue](/metrics/lending-and-borrowing-protocols/compound)
+- [Compound Revenue USD](/metrics/lending-and-borrowing-protocols/compound)
+- [Compound Supply APY](/metrics/lending-and-borrowing-protocols/compound)
+- [Compound Total Borrowed](/metrics/lending-and-borrowing-protocols/compound)
+- [Compound Total Borrowed USD](/metrics/lending-and-borrowing-protocols/compound)
+- [Compound Total Deposits USD](/metrics/lending-and-borrowing-protocols/compound)
+- [Compound Total Liquidations USD](/metrics/lending-and-borrowing-protocols/compound)
+- [Compound Total New Debt USD](/metrics/lending-and-borrowing-protocols/compound)
+- [Compound Total Protocol Cumulative Revenue USD](/metrics/lending-and-borrowing-protocols/compound)
+- [Compound Total Protocol Revenue USD](/metrics/lending-and-borrowing-protocols/compound)
+- [Compound Total Repayments USD](/metrics/lending-and-borrowing-protocols/compound)
+- [Compound Total Supplied](/metrics/lending-and-borrowing-protocols/compound)
+- [Compound Total Supplied USD](/metrics/lending-and-borrowing-protocols/compound)
+- [Compound V3 Action Deposits](/metrics/lending-and-borrowing-protocols/compound-v3)
+- [Compound V3 Action Deposits USD](/metrics/lending-and-borrowing-protocols/compound-v3)
+- [Compound V3 Action Liquidations](/metrics/lending-and-borrowing-protocols/compound-v3)
+- [Compound V3 Action Liquidations USD](/metrics/lending-and-borrowing-protocols/compound-v3)
+- [Compound V3 Action New Debt](/metrics/lending-and-borrowing-protocols/compound-v3)
+- [Compound V3 Action New Debt USD](/metrics/lending-and-borrowing-protocols/compound-v3)
+- [Compound V3 Action Repayments](/metrics/lending-and-borrowing-protocols/compound-v3)
+- [Compound V3 Action Repayments USD](/metrics/lending-and-borrowing-protocols/compound-v3)
+- [Compound V3 Active Addresses](/metrics/lending-and-borrowing-protocols/compound-v3)
+- [Compound V3 Borrow APY](/metrics/lending-and-borrowing-protocols/compound-v3)
+- [Compound V3 Collateral Total Supplied](/metrics/lending-and-borrowing-protocols/compound-v3)
+- [Compound V3 Collateral Total Supplied USD](/metrics/lending-and-borrowing-protocols/compound-v3)
+- [Compound V3 Protocol Total Borrowed USD](/metrics/lending-and-borrowing-protocols/compound-v3)
+- [Compound V3 Protocol Total Supplied USD](/metrics/lending-and-borrowing-protocols/compound-v3)
+- [Compound V3 Supply APY](/metrics/lending-and-borrowing-protocols/compound-v3)
+- [Compound V3 Total Borrowed](/metrics/lending-and-borrowing-protocols/compound-v3)
+- [Compound V3 Total Borrowed USD](/metrics/lending-and-borrowing-protocols/compound-v3)
+- [Compound V3 Total Deposits USD](/metrics/lending-and-borrowing-protocols/compound-v3)
+- [Compound V3 Total Liquidations USD](/metrics/lending-and-borrowing-protocols/compound-v3)
+- [Compound V3 Total New Debt USD](/metrics/lending-and-borrowing-protocols/compound-v3)
+- [Compound V3 Total Repayments USD](/metrics/lending-and-borrowing-protocols/compound-v3)
+- [Compound V3 Total Supplied](/metrics/lending-and-borrowing-protocols/compound-v3)
+- [Compound V3 Total Supplied USD](/metrics/lending-and-borrowing-protocols/compound-v3)
+- [DAI Created](/metrics/lending-and-borrowing-protocols/makerdao)
+- [DAI Repaid](/metrics/lending-and-borrowing-protocols/makerdao)
+- [Euler Action Deposits](/metrics/lending-and-borrowing-protocols/euler)
+- [Euler Action Deposits USD](/metrics/lending-and-borrowing-protocols/euler)
+- [Euler Action Liquidations](/metrics/lending-and-borrowing-protocols/euler)
+- [Euler Action Liquidations USD](/metrics/lending-and-borrowing-protocols/euler)
+- [Euler Action New Debt](/metrics/lending-and-borrowing-protocols/euler)
+- [Euler Action New Debt USD](/metrics/lending-and-borrowing-protocols/euler)
+- [Euler Action Repayments](/metrics/lending-and-borrowing-protocols/euler)
+- [Euler Active Addresses](/metrics/lending-and-borrowing-protocols/euler)
+- [Euler Total Deposits USD](/metrics/lending-and-borrowing-protocols/euler)
+- [Euler Total Liquidations USD](/metrics/lending-and-borrowing-protocols/euler)
+- [Euler Total New Debt USD](/metrics/lending-and-borrowing-protocols/euler)
+- [Euler Total Repayments USD](/metrics/lending-and-borrowing-protocols/euler)
+- [Fluid Action Deposits](/metrics/lending-and-borrowing-protocols/fluid)
+- [Fluid Action Deposits USD](/metrics/lending-and-borrowing-protocols/fluid)
+- [Fluid Action Liquidations](/metrics/lending-and-borrowing-protocols/fluid)
+- [Fluid Action Liquidations USD](/metrics/lending-and-borrowing-protocols/fluid)
+- [Fluid Action New Debt](/metrics/lending-and-borrowing-protocols/fluid)
+- [Fluid Action New Debt USD](/metrics/lending-and-borrowing-protocols/fluid)
+- [Fluid Action Repayments](/metrics/lending-and-borrowing-protocols/fluid)
+- [Fluid Action Repayments USD](/metrics/lending-and-borrowing-protocols/fluid)
+- [Fluid Active Addresses](/metrics/lending-and-borrowing-protocols/fluid)
+- [Fluid Protocol Total Supplied USD](/metrics/lending-and-borrowing-protocols/fluid)
+- [Fluid Supply APY](/metrics/lending-and-borrowing-protocols/fluid)
+- [Fluid Total Deposits USD](/metrics/lending-and-borrowing-protocols/fluid)
+- [Fluid Total Liquidations USD](/metrics/lending-and-borrowing-protocols/fluid)
+- [Fluid Total New Debt USD](/metrics/lending-and-borrowing-protocols/fluid)
+- [Fluid Total Protocol Supplied USD](/metrics/lending-and-borrowing-protocols/fluid)
+- [Fluid Total Repayments USD](/metrics/lending-and-borrowing-protocols/fluid)
+- [Fluid Total Supplied](/metrics/lending-and-borrowing-protocols/fluid)
+- [Fluid Total Supplied USD](/metrics/lending-and-borrowing-protocols/fluid)
+- [Fraxlend Action Deposits](/metrics/lending-and-borrowing-protocols/fraxlend)
+- [Fraxlend Action Deposits USD](/metrics/lending-and-borrowing-protocols/fraxlend)
+- [Fraxlend Action Liquidations](/metrics/lending-and-borrowing-protocols/fraxlend)
+- [Fraxlend Action Liquidations USD](/metrics/lending-and-borrowing-protocols/fraxlend)
+- [Fraxlend Action New Debt](/metrics/lending-and-borrowing-protocols/fraxlend)
+- [Fraxlend Action New Debt USD](/metrics/lending-and-borrowing-protocols/fraxlend)
+- [Fraxlend Action Repayments](/metrics/lending-and-borrowing-protocols/fraxlend)
+- [Fraxlend Action Repayments USD](/metrics/lending-and-borrowing-protocols/fraxlend)
+- [Fraxlend Active Addresses](/metrics/lending-and-borrowing-protocols/fraxlend)
+- [Fraxlend Borrow APY](/metrics/lending-and-borrowing-protocols/fraxlend)
+- [Fraxlend Protocol Total Borrowed USD](/metrics/lending-and-borrowing-protocols/fraxlend)
+- [Fraxlend Protocol Total Supplied USD](/metrics/lending-and-borrowing-protocols/fraxlend)
+- [Fraxlend Total Borrowed Against Collateral](/metrics/lending-and-borrowing-protocols/fraxlend)
+- [Fraxlend Total Deposits USD](/metrics/lending-and-borrowing-protocols/fraxlend)
+- [Fraxlend Total Liquidations USD](/metrics/lending-and-borrowing-protocols/fraxlend)
+- [Fraxlend Total New Debt USD](/metrics/lending-and-borrowing-protocols/fraxlend)
+- [Fraxlend Total Repayments USD](/metrics/lending-and-borrowing-protocols/fraxlend)
+- [Fraxlend Total Supplied](/metrics/lending-and-borrowing-protocols/fraxlend)
+- [Fraxlend Total Supplied USD](/metrics/lending-and-borrowing-protocols/fraxlend)
+- [Liquity Action Deposits](/metrics/lending-and-borrowing-protocols/liquity)
+- [Liquity Action Deposits USD](/metrics/lending-and-borrowing-protocols/liquity)
+- [Liquity Action Liquidations](/metrics/lending-and-borrowing-protocols/liquity)
+- [Liquity Action Liquidations USD](/metrics/lending-and-borrowing-protocols/liquity)
+- [Liquity Action New Debt](/metrics/lending-and-borrowing-protocols/liquity)
+- [Liquity Action New Debt USD](/metrics/lending-and-borrowing-protocols/liquity)
+- [Liquity Action Repayments](/metrics/lending-and-borrowing-protocols/liquity)
+- [Liquity Action Repayments USD](/metrics/lending-and-borrowing-protocols/liquity)
+- [Liquity Active Addresses](/metrics/lending-and-borrowing-protocols/liquity)
+- [Liquity Total Borrowed](/metrics/lending-and-borrowing-protocols/liquity)
+- [Liquity Total Borrowed USD](/metrics/lending-and-borrowing-protocols/liquity)
+- [Liquity Total Supplied](/metrics/lending-and-borrowing-protocols/liquity)
+- [Liquity Total Supplied USD](/metrics/lending-and-borrowing-protocols/liquity)
+- [MCD Collateral Ratio](/metrics/lending-and-borrowing-protocols/makerdao)
+- [MCD DSR](/metrics/makerdao-dai-savings-rate)
+- [MCD Stability Fee](/metrics/lending-and-borrowing-protocols/makerdao)
+- [MakerDAO Action Deposits](/metrics/lending-and-borrowing-protocols/makerdao)
+- [MakerDAO Action Deposits USD](/metrics/lending-and-borrowing-protocols/makerdao)
+- [MakerDAO Action Liquidations](/metrics/lending-and-borrowing-protocols/makerdao)
+- [MakerDAO Action Liquidations USD](/metrics/lending-and-borrowing-protocols/makerdao)
+- [MakerDAO Action New Debt](/metrics/lending-and-borrowing-protocols/makerdao)
+- [MakerDAO Action New Debt USD](/metrics/lending-and-borrowing-protocols/makerdao)
+- [MakerDAO Action Repayments](/metrics/lending-and-borrowing-protocols/makerdao)
+- [MakerDAO Action Repayments Filtered](/metrics/lending-and-borrowing-protocols/makerdao)
+- [MakerDAO Action Repayments USD](/metrics/lending-and-borrowing-protocols/makerdao)
+- [MakerDAO Active Addresses](/metrics/lending-and-borrowing-protocols/makerdao)
+- [MakerDAO DSR Deposits](/metrics/makerdao-dai-savings-rate)
+- [MakerDAO DSR Total Supplied](/metrics/makerdao-dai-savings-rate)
+- [MakerDAO DSR Withdrawals](/metrics/makerdao-dai-savings-rate)
+- [MakerDAO Protocol Total Borrowed USD](/metrics/lending-and-borrowing-protocols/makerdao)
+- [MakerDAO Protocol Total Supplied USD](/metrics/lending-and-borrowing-protocols/makerdao)
+- [MakerDAO Total Borrowed](/metrics/lending-and-borrowing-protocols/makerdao)
+- [MakerDAO Total Borrowed USD](/metrics/lending-and-borrowing-protocols/makerdao)
+- [MakerDAO Total Deposits USD](/metrics/lending-and-borrowing-protocols/makerdao)
+- [MakerDAO Total Liquidations USD](/metrics/lending-and-borrowing-protocols/makerdao)
+- [MakerDAO Total New Debt USD](/metrics/lending-and-borrowing-protocols/makerdao)
+- [MakerDAO Total Repayments USD](/metrics/lending-and-borrowing-protocols/makerdao)
+- [MakerDAO Total Supplied](/metrics/lending-and-borrowing-protocols/makerdao)
+- [MakerDAO Total Supplied USD](/metrics/lending-and-borrowing-protocols/makerdao)
+- [Maple Action Deposits](/metrics/lending-and-borrowing-protocols/maple)
+- [Maple Action Deposits USD](/metrics/lending-and-borrowing-protocols/maple)
+- [Maple Action New Debt](/metrics/lending-and-borrowing-protocols/maple)
+- [Maple Action New Debt USD](/metrics/lending-and-borrowing-protocols/maple)
+- [Maple Action Repayments](/metrics/lending-and-borrowing-protocols/maple)
+- [Maple Action Repayments USD](/metrics/lending-and-borrowing-protocols/maple)
+- [Maple Total Borrowed](/metrics/lending-and-borrowing-protocols/maple)
+- [Maple Total Borrowed USD](/metrics/lending-and-borrowing-protocols/maple)
+- [Maple Total New Debt USD](/metrics/lending-and-borrowing-protocols/maple)
+- [Maple Total Repayments USD](/metrics/lending-and-borrowing-protocols/maple)
+- [Maple Total Supplied](/metrics/lending-and-borrowing-protocols/maple)
+- [Morpho Action Age Repayments](/metrics/lending-and-borrowing-protocols/morpho)
+- [Morpho Action Deposits](/metrics/lending-and-borrowing-protocols/morpho)
+- [Morpho Action Deposits USD](/metrics/lending-and-borrowing-protocols/morpho)
+- [Morpho Action Liquidations](/metrics/lending-and-borrowing-protocols/morpho)
+- [Morpho Action Liquidations USD](/metrics/lending-and-borrowing-protocols/morpho)
+- [Morpho Action New Debt](/metrics/lending-and-borrowing-protocols/morpho)
+- [Morpho Action New Debt USD](/metrics/lending-and-borrowing-protocols/morpho)
+- [Morpho Action Repayments](/metrics/lending-and-borrowing-protocols/morpho)
+- [Morpho Action Repayments USD](/metrics/lending-and-borrowing-protocols/morpho)
+- [Morpho Active Addresses](/metrics/lending-and-borrowing-protocols/morpho)
+- [Morpho Flash Loan](/metrics/lending-and-borrowing-protocols/morpho)
+- [Morpho Flash Loan USD](/metrics/lending-and-borrowing-protocols/morpho)
+- [Morpho Protocol Total Borrowed USD](/metrics/lending-and-borrowing-protocols/morpho)
+- [Morpho Protocol Total Supplied USD](/metrics/lending-and-borrowing-protocols/morpho)
+- [Morpho Total Deposits USD](/metrics/lending-and-borrowing-protocols/morpho)
+- [Morpho Total Flash Loan USD](/metrics/lending-and-borrowing-protocols/morpho)
+- [Morpho Total Liquidations USD](/metrics/lending-and-borrowing-protocols/morpho)
+- [Morpho Total New Debt USD](/metrics/lending-and-borrowing-protocols/morpho)
+- [Morpho Total Repayments USD](/metrics/lending-and-borrowing-protocols/morpho)
+- [Morpho Vaults APY](/metrics/lending-and-borrowing-protocols/morpho)
+- [Morpho Vaults Total Supplied USD](/metrics/lending-and-borrowing-protocols/morpho)
+- [Spark Action Age Repayments](/metrics/lending-and-borrowing-protocols/spark)
+- [Spark Action Deposits](/metrics/lending-and-borrowing-protocols/spark)
+- [Spark Action Deposits USD](/metrics/lending-and-borrowing-protocols/spark)
+- [Spark Action Liquidations](/metrics/lending-and-borrowing-protocols/spark)
+- [Spark Action Liquidations USD](/metrics/lending-and-borrowing-protocols/spark)
+- [Spark Action New Debt](/metrics/lending-and-borrowing-protocols/spark)
+- [Spark Action New Debt USD](/metrics/lending-and-borrowing-protocols/spark)
+- [Spark Action Repayments](/metrics/lending-and-borrowing-protocols/spark)
+- [Spark Action Repayments USD](/metrics/lending-and-borrowing-protocols/spark)
+- [Spark Active Addresses](/metrics/lending-and-borrowing-protocols/spark)
+- [Spark Borrow APY](/metrics/lending-and-borrowing-protocols/spark)
+- [Spark Flash Loan](/metrics/lending-and-borrowing-protocols/spark)
+- [Spark Flash Loan USD](/metrics/lending-and-borrowing-protocols/spark)
+- [Spark Protocol Total Borrowed USD](/metrics/lending-and-borrowing-protocols/spark)
+- [Spark Protocol Total Supplied USD](/metrics/lending-and-borrowing-protocols/spark)
+- [Spark Supply APY](/metrics/lending-and-borrowing-protocols/spark)
+- [Spark Total Borrowed](/metrics/lending-and-borrowing-protocols/spark)
+- [Spark Total Borrowed USD](/metrics/lending-and-borrowing-protocols/spark)
+- [Spark Total Deposits USD](/metrics/lending-and-borrowing-protocols/spark)
+- [Spark Total Flash Loan USD](/metrics/lending-and-borrowing-protocols/spark)
+- [Spark Total Liquidations USD](/metrics/lending-and-borrowing-protocols/spark)
+- [Spark Total New Debt USD](/metrics/lending-and-borrowing-protocols/spark)
+- [Spark Total Repayments USD](/metrics/lending-and-borrowing-protocols/spark)
+- [Spark Total Supplied](/metrics/lending-and-borrowing-protocols/spark)
+- [Spark Total Supplied USD](/metrics/lending-and-borrowing-protocols/spark)
+- [Total DAI Created](/metrics/lending-and-borrowing-protocols/makerdao)
+
+NFT
+- [NFT Retail Trade Volume USD](/metrics/nft-trade-volume-usd)
+- [NFT Retail Trades Count](/metrics/nft-trades-count)
+- [NFT Whale Trade Volume USD](/metrics/nft-trade-volume-usd)
+- [NFT Whale Trades Count](/metrics/nft-trades-count)
+
+Whales
+- [Whale Transaction Count 100K USD to Infinity](/metrics/whale-transaction-count)
+- [Whale Transaction Count 1M USD to Infinity](/metrics/whale-transaction-volume)
+- [Whale Transaction Volume 100K USD to Infinity](/metrics/whale-transaction-volume)
+- [Whale Transaction Volume 1M USD to Infinity](/metrics/whale-transaction-volume)
+
+Yield, Savings & Staking
+- [Ethena Staking APY](/metrics/ethena-staking)
+- [Ethena Staking Deposits](/metrics/ethena-staking)
+- [Ethena Staking Withdrawals](/metrics/ethena-staking)
+- [GHO Savings Deposits](/metrics/gho-savings)
+- [GHO Savings Total Supplied](/metrics/gho-savings)
+- [GHO Savings Withdrawals](/metrics/gho-savings)
+- [Pendle Implied APY](/metrics/pendle-markets)
+- [Pendle Total Markets TVL](/metrics/pendle-markets)
+- [Pendle Underlying APY](/metrics/pendle-markets)
+- [Pendle Yield Spread](/metrics/pendle-markets)
+- [Sky Savings APY](/metrics/sky-savings)
+- [Sky Savings Deposits](/metrics/sky-savings)
+- [Sky Savings Total Supplied](/metrics/sky-savings)
+- [Sky Savings Withdrawals](/metrics/sky-savings)
+- [crvUSD Savings APY](/metrics/crvusd-savings)
+- [crvUSD Savings Distributions](/metrics/crvusd-savings)
+- [crvUSD Savings Total Supplied](/metrics/crvusd-savings)
 
 </Resource>

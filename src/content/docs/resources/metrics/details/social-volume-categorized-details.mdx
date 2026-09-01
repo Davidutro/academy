@@ -22,10 +22,11 @@ As of the current classification run, 18,203 Twitter accounts have been
 categorized, based on account activity between `2025-03-09` and
 `2026-03-09`.
 
-An account can belong to more than one category at a time.
+An account can belong to more than one category at a time. 
 
-Classification runs over a fixed historical window rather than continuously
-in real time. {/* TODO(verify): the timerange has a fixed end date (2026-03-09) rather than extending to "today" — need to ask the data team what determines that end date and how often classification is re-run */}
+There are also accounts that don't belong to any category, whole volume is only reflected in the regular social volume metric.
+
+Classification runs over a relative historical window. We use the last 12 months of data or the last 20 X.com posts for newer accounts. Currently classification is not re-run for already classified accounts; for newly added accounts it runs at the moment we follow the account.
 
 ---
 
@@ -104,5 +105,5 @@ In the metric name, this category is typed as `trading_firm`. Example:
 
 ## History
 
-All seven categories share the same classification window: `2025-03-09` to
+All seven categories share the same original classification window: `2025-03-09` to
 `2026-03-09`.

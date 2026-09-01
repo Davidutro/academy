@@ -10,19 +10,15 @@ sidebar:
 
 ## Definition
 
-[Twitter/X.com Social Volume](/metrics/social-volume) can be broken down by account
-category. Categorized Social Volume ships as a set of per-category metrics,
-each following the pattern `social_volume_twitter_<category>`.
+[Twitter/X.com Social Volume](/metrics/social-volume) can be broken down by account category.
+Categorized Social Volume ships as a set of per-category metrics, each following the pattern `social_volume_twitter_<category>`.
 
-Each metric counts social data text documents
-posted by accounts in a defined category that mention the given asset. Document-counting mechanic (tweets/replies, "posted by" attribution) is carried over from how Social Volume counts documents.
+Each metric counts social data text documents posted by accounts in a defined category that mention the given asset.
+Document-counting mechanic (tweets/replies, "posted by" attribution) is carried over from how Social Volume counts documents.
 
-See [Categorized Social Volume Details](/metrics/details/social-volume-categorized-details)
-for what accounts fall into each category, how assignment works, and how
-often it is reviewed.
+See [Categorized Social Volume Details](/metrics/details/social-volume-categorized-details) for what accounts fall into each category, how assignment works, and how often it is reviewed.
 
-Like Social Volume, data for these metrics may be supplemented with new data
-within a 12-hour period after it is first recorded.
+Like Social Volume, data for these metrics may be supplemented with new data within a 12-hour period after it is first recorded.
 
 These metrics are currently in beta status.
 
@@ -32,18 +28,15 @@ These metrics are currently in beta status.
 
 [Restricted Access](/metrics/details/access#restricted-access).
 
-As of this writing, the SanAPI returns the following error for every asset
-covered by these metrics, regardless of subscription tier:
+As of this writing, the SanAPI returns the following error for every asset covered by these metrics, regardless of subscription tier:
 
-> The metric `social_volume_twitter_btc_maxi` is currently in beta phase and
-> is exclusively available to select users.
+> The metric `social_volume_twitter_btc_maxi` is currently in beta phase and is exclusively available to select users.
 
 ---
 
 ## Measuring Unit
 
-Amount of documents posted by accounts in the category that mention the
-given asset.
+Amount of documents posted by accounts in the category that mention the given asset.
 
 ---
 
@@ -55,8 +48,7 @@ given asset.
 
 ## Change Metrics
 
-No `_change_1d`, `_change_7d`, or `_change_30d` variants exist for these
-metrics.
+No `_change_1d`, `_change_7d`, or `_change_30d` variants exist for these metrics.
 
 ---
 
@@ -76,8 +68,7 @@ metrics.
 
 Available for [these assets](<https://api.santiment.net/graphiql?variables=&query=%7B%0A%20%20getMetric(metric%3A%20%22social_volume_twitter_btc_maxi%22)%20%7B%0A%20%20%20%20metadata%20%7B%0A%20%20%20%20%20%20availableSlugs%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A>).
 
-All seven category metrics share the same 215-asset set, which is a subset
-of the 2,816 assets available for [Social Volume](/metrics/social-volume).
+All seven category metrics share the same 215-asset set, which is a subset of the 2,816 assets available for [Social Volume](/metrics/social-volume).
 
 ---
 
@@ -108,8 +99,7 @@ Available under the following names:
 }
 ```
 
-As of this writing, this query returns the beta-access error described under
-[Access](#access) instead of data. {/* TODO(verify): re-run this example once the beta gate lifts and confirm it returns real values before publishing */}
+As of this writing, this query returns the beta-access error described under [Access](#access) instead of data. {/* TODO(verify): re-run this example once the beta gate lifts and confirm it returns real values before publishing */}
 
 ---
 

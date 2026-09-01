@@ -10,16 +10,14 @@ sidebar:
 
 ## Definition
 
-Labeled Social Volume splits [Social Volume](/metrics/social-volume) by
-document sentiment score. Each document is labeled positive, neutral, or
-negative, then counted.
+Labeled Social Volume splits [Social Volume](/metrics/social-volume) by document sentiment score.
+Each document is labeled positive, neutral, or negative, then counted.
 
 A document is:
 
 - **Positive** when `sentiment.positive > 0.55`.
-- **Neutral** when `0.45 ≤ sentiment.positive ≤ 0.55` and
-  `sentiment.positive != 0.5`. Documents scored exactly `0.5` are excluded
-  as noise.
+- **Neutral** when `0.45 ≤ sentiment.positive ≤ 0.55` and `sentiment.positive != 0.5`.
+  Documents scored exactly `0.5` are excluded as noise.
 - **Negative** when `sentiment.negative > 0.55` or `sentiment.positive < 0.45`.
 
 These metrics are currently in beta status.
@@ -30,11 +28,9 @@ These metrics are currently in beta status.
 
 [Restricted Access](/metrics/details/access#restricted-access).
 
-As of this writing, the SanAPI returns the following error for every asset
-covered by these metrics, regardless of subscription tier:
+As of this writing, the SanAPI returns the following error for every asset covered by these metrics, regardless of subscription tier:
 
-> The metric `positive_docs_count_total` is currently in beta phase and is
-> exclusively available to alpha and beta users.
+> The metric `positive_docs_count_total` is currently in beta phase and is exclusively available to alpha and beta users.
 
 ---
 
@@ -52,8 +48,7 @@ Amount of documents that fall into the given sentiment bucket.
 
 ## Change Metrics
 
-No `_change_1d`, `_change_7d`, or `_change_30d` variants exist for these
-metrics.
+No `_change_1d`, `_change_7d`, or `_change_30d` variants exist for these metrics.
 
 ---
 
@@ -77,10 +72,7 @@ Available for [these assets](<https://api.santiment.net/graphiql?variables=&quer
 
 ## SanAPI
 
-Available under the `positive_docs_count_total` and
-`positive_docs_count_<source>`, `neutral_docs_count_total` and
-`neutral_docs_count_<source>`, `negative_docs_count_total` and
-`negative_docs_count_<source>` names, where the available sources are:
+Available under the `positive_docs_count_total` and `positive_docs_count_<source>`, `neutral_docs_count_total` and `neutral_docs_count_<source>`, `negative_docs_count_total` and `negative_docs_count_<source>` names, where the available sources are:
 
 - 4chan
 - telegram
@@ -101,6 +93,7 @@ Available under the `positive_docs_count_total` and
     )
   }
 }
+```
 
 ---
 

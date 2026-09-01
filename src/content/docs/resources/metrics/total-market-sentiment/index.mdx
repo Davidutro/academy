@@ -8,16 +8,14 @@ dateModified: 2026-09-01
 
 ## Definition
 
-Total Market Sentiment aggregates the bullish and bearish sentiment found
-across documents that mention at least one asset, on 4chan, Bitcointalk,
-Reddit, and Twitter.
+Total Market Sentiment aggregates the bullish and bearish sentiment found across documents that mention at least one asset, on 4chan, Bitcointalk, Reddit, and Twitter.
 
 $$
 \text{Total Market Sentiment} = \frac{\text{Market Sentiment Bullish} - \text{Market Sentiment Bearish}}{\text{Market Sentiment Bullish} + \text{Market Sentiment Bearish}}
 $$
 
-The result is a single number between -1 (entirely bearish) and 1 (entirely
-bullish). A value of 0 means bullish and bearish documents are in balance.
+The result is a single number between -1 (entirely bearish) and 1 (entirely bullish).
+A value of 0 means bullish and bearish documents are in balance.
 
 ---
 
@@ -25,8 +23,7 @@ bullish). A value of 0 means bullish and bearish documents are in balance.
 
 [Restricted Access](/metrics/details/access#restricted-access).
 
-> The metric `sentiment_bb_ratio_selective` is currently in beta phase and is
-> exclusively available to alpha and beta users.
+> The metric `sentiment_bb_ratio_selective` is currently in beta phase and is exclusively available to alpha and beta users.
 
 ---
 
@@ -44,8 +41,7 @@ A ratio between -1 and 1.
 
 ## Change Metrics
 
-No `_change_1d`, `_change_7d`, or `_change_30d` variants exist for this
-metric.
+No `_change_1d`, `_change_7d`, or `_change_30d` variants exist for this metric.
 
 ---
 
@@ -63,16 +59,14 @@ metric.
 
 ## Available Assets
 
-This metric is not queried per-asset. It uses a single fixed selector, slug
-`total_market`, representing the aggregate crypto market rather than any one
-asset.
+This metric is not queried per-asset.
+It uses a single fixed selector, slug `total_market`, representing the aggregate crypto market rather than any one asset.
 
 ---
 
 ## SanAPI
 
-Available under the metric name `sentiment_bb_ratio_selective`, with the
-slug selector `total_market`.
+Available under the metric name `sentiment_bb_ratio_selective`, with the slug selector `total_market`.
 
 ### Total Market Sentiment
 

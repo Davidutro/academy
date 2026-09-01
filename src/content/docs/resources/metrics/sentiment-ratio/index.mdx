@@ -8,9 +8,7 @@ dateModified: 2026-09-01
 
 ## Definition
 
-Sentiment Ratio compares [Labeled Social Volume](/metrics/social-volume-labeled)
-counts to show what share of documents fall into each sentiment bucket —
-positive, neutral, or negative.
+Sentiment Ratio compares [Labeled Social Volume](/metrics/social-volume-labeled) counts to show what share of documents fall into each sentiment bucket — positive, neutral, or negative.
 
 $$
 \text{Positive Ratio} = \frac{\text{Positive Docs Count}}{\text{Positive Docs Count} + \text{Neutral Docs Count} + \text{Negative Docs Count}}
@@ -32,15 +30,13 @@ These metrics are currently in beta status.
 
 [Restricted Access](/metrics/details/access#restricted-access).
 
-> The metric `sentiment_positive_ratio_total` is currently in beta phase and
-> is exclusively available to alpha and beta users.
+> The metric `sentiment_positive_ratio_total` is currently in beta phase and is exclusively available to alpha and beta users.
 
 ---
 
 ## Measuring Unit
 
-Ratio of documents in the given sentiment bucket to all documents, as a
-number between 0 and 1.
+Ratio of documents in the given sentiment bucket to all documents, as a number between 0 and 1.
 
 ---
 
@@ -52,17 +48,13 @@ number between 0 and 1.
 
 ## Change Metrics
 
-No `_change_1d`, `_change_7d`, or `_change_30d` variants exist for these
-metrics.
+No `_change_1d`, `_change_7d`, or `_change_30d` variants exist for these metrics.
 
 ---
 
 ## Frequency
 
-Each source is available at three frequencies: the plain metric name is
-computed on [five-minute intervals](/metrics/details/frequency#five-minute-frequency),
-the `_1h` suffix on [hourly intervals](/metrics/details/frequency#hourly-frequency),
-and the `_1d` suffix on [daily intervals](/metrics/details/frequency#daily-frequency).
+Each source is available at three frequencies: the plain metric name is computed on [five-minute intervals](/metrics/details/frequency#five-minute-frequency), the `_1h` suffix on [hourly intervals](/metrics/details/frequency#hourly-frequency), and the `_1d` suffix on [daily intervals](/metrics/details/frequency#daily-frequency).
 
 ---
 
@@ -80,10 +72,7 @@ Available for [these assets](<https://api.santiment.net/graphiql?variables=&quer
 
 ## SanAPI
 
-Available under the `sentiment_positive_ratio_total` and
-`sentiment_positive_ratio_<source>`, `sentiment_neutral_ratio_total` and
-`sentiment_neutral_ratio_<source>`, `sentiment_negative_ratio_total` and
-`sentiment_negative_ratio_<source>` names, where the available sources are:
+Available under the `sentiment_positive_ratio_total` and `sentiment_positive_ratio_<source>`, `sentiment_neutral_ratio_total` and `sentiment_neutral_ratio_<source>`, `sentiment_negative_ratio_total` and `sentiment_negative_ratio_<source>` names, where the available sources are:
 
 - 4chan
 - telegram
@@ -91,8 +80,7 @@ Available under the `sentiment_positive_ratio_total` and
 - twitter
 - total (combines all sources)
 
-Each of the names above is also available with a `_1h` or `_1d` suffix — see
-[Frequency](#frequency).
+Each of the names above is also available with a `_1h` or `_1d` suffix — see [Frequency](#frequency).
 
 ### Sentiment Ratio for an Asset
 

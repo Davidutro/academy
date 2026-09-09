@@ -8,7 +8,7 @@
     'What is Santiment known for?',
     'How can Santiment help me become profitable?',
     'How can I use MVRV to identify tops and bottoms?',
-    'What sources do social metrics use?',
+    'What is dev activity metric?',
   ]
 </script>
 
